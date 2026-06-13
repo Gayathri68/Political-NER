@@ -1,0 +1,14 @@
+====================================================================================================
+CONFUSION SUMMARY (BEST MODEL = XLM-R)
+====================================================================================================
+Top label confusions (True -> Pred):
+
+  O                         -> B-PERSON                  : 216
+  O                         -> I-GOVERNMENT_SCHEME       : 31
+  I-PERSON                  -> B-PERSON                  : 14
+  B-LOCATION                -> B-PERSON                  : 12
+  O                         -> B-LOCATION                : 10
+  B-POLITICAL_PARTY         -> B-PERSON                  : 2
+  I-POLITICAL_PARTY         -> I-GOVERNMENT_SCHEME       : 2
+  I-PERSON                  -> I-GOVERNMENT_SCHEME       : 1
+  O                         -> I-LOCATION                : 1

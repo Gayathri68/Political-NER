@@ -1,0 +1,28 @@
+================================================================================
+LABEL DISTRIBUTION REPORT
+================================================================================
+Generated at       : 2026-06-05 19:58:01
+Raw Step 3 records : 1419
+Valid records used : 50
+Total tokens       : 829
+
+Per-language sentence counts:
+  Assamese     (as) : 230
+  English      (en) : 239
+  Kannada      (kn) : 106
+  Malayalam    (ml) : 292
+  Odia         (or) : 312
+  Punjabi      (pa) : 240
+
+Token label distribution:
+  O                              727  ( 87.70%)
+  B-POLITICIAN                     2  (  0.24%)
+  I-POLITICIAN                     0  (  0.00%)
+  B-PERSON                        30  (  3.62%)
+  I-PERSON                        15  (  1.81%)
+  B-POLITICAL_PARTY                3  (  0.36%)
+  I-POLITICAL_PARTY                2  (  0.24%)
+  B-GOVERNMENT_SCHEME              0  (  0.00%)
+  I-GOVERNMENT_SCHEME              0  (  0.00%)
+  B-LOCATION                      46  (  5.55%)
+  I-LOCATION                       4  (  0.48%)

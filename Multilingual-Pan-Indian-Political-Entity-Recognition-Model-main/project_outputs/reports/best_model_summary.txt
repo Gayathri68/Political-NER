@@ -1,0 +1,28 @@
+====================================================================================================
+BEST MODEL SUMMARY
+====================================================================================================
+Generated at          : 2026-06-05 20:00:20
+Best Model            : XLM-R
+Model ID              : xlm-roberta-base
+Saved Path            : project_outputs/saved_model_xlmr
+Best Epoch            : 1
+Best Validation EntF1 : 0.0283
+Final Test Accuracy   : 0.0367
+Final Test Macro F1   : 0.0104
+Final Test WeightedF1 : 0.0092
+Final Test Entity F1  : 0.0317
+Model Size (MB)       : 1074.76
+Sentences / sec       : 8.45
+
+Label Schema:
+  - O
+  - B-POLITICIAN
+  - I-POLITICIAN
+  - B-PERSON
+  - I-PERSON
+  - B-POLITICAL_PARTY
+  - I-POLITICAL_PARTY
+  - B-GOVERNMENT_SCHEME
+  - I-GOVERNMENT_SCHEME
+  - B-LOCATION
+  - I-LOCATION

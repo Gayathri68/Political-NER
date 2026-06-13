@@ -1,0 +1,8 @@
+====================================================================================================
+PER-LANGUAGE TEST REPORT (BEST MODEL = XLM-R)
+====================================================================================================
+English      (en): sentences=1, accuracy=0.0000, macro_f1=0.0000, weighted_f1=0.0000, entity_f1=0.0000
+Kannada      (kn): sentences=1, accuracy=0.0000, macro_f1=0.0000, weighted_f1=0.0000, entity_f1=0.0000
+Malayalam    (ml): sentences=1, accuracy=0.0250, macro_f1=0.0132, weighted_f1=0.0487, entity_f1=0.0000
+Odia         (or): sentences=2, accuracy=0.0208, macro_f1=0.0091, weighted_f1=0.0009, entity_f1=0.0000
+Punjabi      (pa): sentences=3, accuracy=0.0687, macro_f1=0.0236, weighted_f1=0.0097, entity_f1=0.0725

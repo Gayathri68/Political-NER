@@ -1,0 +1,95 @@
+Run started at 2026-06-05 19:58:01
+====================================================================================================
+FINAL YEAR PROJECT - MULTILINGUAL PAN-INDIAN POLITICAL NER
+====================================================================================================
+Started at            : 2026-06-05 19:58:01
+Device                : cpu
+Models                : MuRIL, XLM-R
+Epochs                : 1
+Learning Rate         : 2e-05
+Max Sentences Cap     : 50
+Train/Val/Test Split  : 70 / 15 / 15
+
+================================================================================
+LOADING STEP 3 DATA
+================================================================================
+Loaded    239 from output_files_step3/news_labeled_english.jsonl
+Loaded    292 from output_files_step3/news_labeled_malayalam.jsonl
+Loaded    312 from output_files_step3/news_labeled_odia.jsonl
+Loaded    240 from output_files_step3/news_labeled_punjabi.jsonl
+Loaded    230 from output_files_step3/news_labeled_assamese.jsonl
+Loaded    106 from output_files_step3/news_labeled_kannada.jsonl
+CPU cap applied: using only 50 sentences
+
+TOTAL RECORDS USED : 50
+TRAIN              : 35
+VALIDATION         : 7
+TEST               : 8
+
+
+===== MODEL 1/2 : MuRIL =====
+
+################################################################################
+TRAINING MODEL: MuRIL
+################################################################################
+Model ID      : google/muril-base-cased
+Save dir      : project_outputs/saved_model_muril
+Max len       : 90
+Batch size    : 4
+Epochs        : 1
+Device        : cpu
+
+[MuRIL] Epoch 1/1
+  Train Loss      : 2.3809
+  Val Accuracy    : 0.8021
+  Val F1 Macro    : 0.1791
+  Val F1 Weighted : 0.7854
+  Val Entity F1   : 0.1143
+  Epoch Time      : 35.5s
+  [OK] BEST MODEL UPDATED (epoch 1, val entity F1 = 0.1143)
+
+
+===== MODEL 2/2 : XLM-R =====
+
+################################################################################
+TRAINING MODEL: XLM-R
+################################################################################
+Model ID      : xlm-roberta-base
+Save dir      : project_outputs/saved_model_xlmr
+Max len       : 90
+Batch size    : 4
+Epochs        : 1
+Device        : cpu
+
+[XLM-R] Epoch 1/1
+  Train Loss      : 2.4762
+  Val Accuracy    : 0.0240
+  Val F1 Macro    : 0.0104
+  Val F1 Weighted : 0.0196
+  Val Entity F1   : 0.0283
+  Epoch Time      : 36.8s
+  [OK] BEST MODEL UPDATED (epoch 1, val entity F1 = 0.0283)
+
+
+====================================================================================================
+ALL DONE SUCCESSFULLY
+====================================================================================================
+Finished at           : 2026-06-05 20:00:25
+Total runtime (sec)   : 144.09
+Total runtime (hrs)   : 0.04
+
+OUTPUT FILES CREATED:
+  project_outputs\reports\final_training_report.txt
+  project_outputs\reports\model_comparison_report.txt
+  project_outputs\reports\best_model_summary.txt
+  project_outputs\reports\label_distribution_report.txt
+  project_outputs\reports\weak_labeling_summary.txt
+  project_outputs\reports\per_language_test_report.txt
+  project_outputs\reports\confusion_summary.txt
+  project_outputs\predictions\sample_predictions.txt
+  project_outputs\predictions\error_analysis.txt
+  project_outputs\predictions\demo_predictions.txt
+  project_outputs\logs\run_log.txt
+  project_outputs\reports\report_muril.txt
+  project_outputs\reports\report_xlm_r.txt
+====================================================================================================

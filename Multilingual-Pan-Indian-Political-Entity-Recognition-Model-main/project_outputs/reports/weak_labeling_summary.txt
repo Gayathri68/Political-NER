@@ -1,0 +1,12 @@
+================================================================================
+WEAK LABELING SUMMARY
+================================================================================
+Generated at                : 2026-06-05 19:58:01
+Raw Step 3 records read     : 1419
+Valid records kept          : 50
+Records with >=1 entity     : 50
+Entity-bearing %            : 100.00%
+
+Note:
+  This dataset comes from Step 3 weak annotation.
+  Weak labels may contain noise, but they enable scalable multilingual training.

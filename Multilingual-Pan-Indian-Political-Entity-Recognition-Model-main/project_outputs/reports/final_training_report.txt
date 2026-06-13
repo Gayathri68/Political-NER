@@ -1,0 +1,51 @@
+====================================================================================================
+FINAL TRAINING REPORT
+====================================================================================================
+Generated at          : 2026-06-05 20:00:20
+Device                : cpu
+Train size            : 35
+Validation size       : 7
+Test size             : 8
+Models trained        : MuRIL, XLM-R
+
+----------------------------------------------------------------------------------------------------
+MODEL: MuRIL
+----------------------------------------------------------------------------------------------------
+Best Epoch            : 1
+Best Val Entity F1    : 0.1143
+Test Accuracy         : 0.8110
+Test F1 Macro         : 0.1285
+Test F1 Weighted      : 0.7862
+Test Entity F1        : 0.0000
+Train Time (hrs)      : 0.01
+Sentences/sec         : 8.77
+Avg ms/sentence       : 114.08
+Model Size (MB)       : 910.12
+Saved model           : project_outputs/saved_model_muril
+Per-model report      : project_outputs\reports\report_muril.txt
+
+----------------------------------------------------------------------------------------------------
+MODEL: XLM-R
+----------------------------------------------------------------------------------------------------
+Best Epoch            : 1
+Best Val Entity F1    : 0.0283
+Test Accuracy         : 0.0367
+Test F1 Macro         : 0.0104
+Test F1 Weighted      : 0.0092
+Test Entity F1        : 0.0317
+Train Time (hrs)      : 0.03
+Sentences/sec         : 8.45
+Avg ms/sentence       : 118.33
+Model Size (MB)       : 1074.76
+Saved model           : project_outputs/saved_model_xlmr
+Per-model report      : project_outputs\reports\report_xlm_r.txt
+
+====================================================================================================
+RECOMMENDED FINAL MODEL
+====================================================================================================
+Best Model            : XLM-R
+Reason                : Highest entity-level F1 on final test set
+Entity F1             : 0.0317
+Macro F1              : 0.0104
+Accuracy              : 0.0367
+====================================================================================================

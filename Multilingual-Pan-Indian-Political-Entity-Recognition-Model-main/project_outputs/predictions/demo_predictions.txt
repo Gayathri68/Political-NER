@@ -1,0 +1,51 @@
+====================================================================================================
+DEMO PREDICTIONS (BEST MODEL = XLM-R)
+====================================================================================================
+[Demo 1]
+Language : English (en)
+Input    : Narendra Modi launched PM Kisan in Assam with BJP leaders.
+Tokens   : [('Narendra', 'B-PERSON'), ('Modi', 'B-PERSON'), ('launched', 'B-PERSON'), ('PM', 'B-PERSON'), ('Kisan', 'B-PERSON'), ('in', 'B-PERSON'), ('Assam', 'B-PERSON'), ('with', 'B-PERSON'), ('BJP', 'B-PERSON'), ('leaders.', 'B-PERSON')]
+Entities : [('Narendra', 'PERSON'), ('Modi', 'PERSON'), ('launched', 'PERSON'), ('PM', 'PERSON'), ('Kisan', 'PERSON'), ('in', 'PERSON'), ('Assam', 'PERSON'), ('with', 'PERSON'), ('BJP', 'PERSON'), ('leaders.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 2]
+Language : English (en)
+Input    : Rahul Gandhi addressed Congress workers in Karnataka.
+Tokens   : [('Rahul', 'B-PERSON'), ('Gandhi', 'I-GOVERNMENT_SCHEME'), ('addressed', 'B-PERSON'), ('Congress', 'I-GOVERNMENT_SCHEME'), ('workers', 'B-PERSON'), ('in', 'I-LOCATION'), ('Karnataka.', 'B-PERSON')]
+Entities : [('Rahul', 'PERSON'), ('Gandhi', 'GOVERNMENT_SCHEME'), ('addressed', 'PERSON'), ('Congress', 'GOVERNMENT_SCHEME'), ('workers', 'PERSON'), ('in', 'LOCATION'), ('Karnataka.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 3]
+Language : English (en)
+Input    : Mamata Banerjee spoke about Ayushman Bharat in West Bengal.
+Tokens   : [('Mamata', 'B-PERSON'), ('Banerjee', 'B-PERSON'), ('spoke', 'I-GOVERNMENT_SCHEME'), ('about', 'I-GOVERNMENT_SCHEME'), ('Ayushman', 'B-PERSON'), ('Bharat', 'B-PERSON'), ('in', 'I-GOVERNMENT_SCHEME'), ('West', 'B-PERSON'), ('Bengal.', 'B-PERSON')]
+Entities : [('Mamata', 'PERSON'), ('Banerjee', 'PERSON'), ('spoke about', 'GOVERNMENT_SCHEME'), ('Ayushman', 'PERSON'), ('Bharat', 'PERSON'), ('in', 'GOVERNMENT_SCHEME'), ('West', 'PERSON'), ('Bengal.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 4]
+Language : Malayalam (ml)
+Input    : നരേന്ദ്ര മോദി അസമിൽ പി എം കിസാൻ പദ്ധതിയെ കുറിച്ച് സംസാരിച്ചു
+Tokens   : [('നരേന്ദ്ര', 'B-PERSON'), ('മോദി', 'B-PERSON'), ('അസമിൽ', 'B-PERSON'), ('പി', 'B-PERSON'), ('എം', 'B-PERSON'), ('കിസാൻ', 'B-PERSON'), ('പദ്ധതിയെ', 'B-PERSON'), ('കുറിച്ച്', 'B-PERSON'), ('സംസാരിച്ചു', 'B-PERSON')]
+Entities : [('നരേന്ദ്ര', 'PERSON'), ('മോദി', 'PERSON'), ('അസമിൽ', 'PERSON'), ('പി', 'PERSON'), ('എം', 'PERSON'), ('കിസാൻ', 'PERSON'), ('പദ്ധതിയെ', 'PERSON'), ('കുറിച്ച്', 'PERSON'), ('സംസാരിച്ചു', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 5]
+Language : Kannada (kn)
+Input    : ನರೇಂದ್ರ ಮೋದಿ ಅಸ್ಸಾಂನಲ್ಲಿ ಪಿಎಂ ಕಿಸಾನ್ ಯೋಜನೆ ಬಗ್ಗೆ ಮಾತನಾಡಿದರು
+Tokens   : [('ನರೇಂದ್ರ', 'B-PERSON'), ('ಮೋದಿ', 'B-PERSON'), ('ಅಸ್ಸಾಂನಲ್ಲಿ', 'B-PERSON'), ('ಪಿಎಂ', 'B-PERSON'), ('ಕಿಸಾನ್', 'B-PERSON'), ('ಯೋಜನೆ', 'B-PERSON'), ('ಬಗ್ಗೆ', 'B-PERSON'), ('ಮಾತನಾಡಿದರು', 'B-PERSON')]
+Entities : [('ನರೇಂದ್ರ', 'PERSON'), ('ಮೋದಿ', 'PERSON'), ('ಅಸ್ಸಾಂನಲ್ಲಿ', 'PERSON'), ('ಪಿಎಂ', 'PERSON'), ('ಕಿಸಾನ್', 'PERSON'), ('ಯೋಜನೆ', 'PERSON'), ('ಬಗ್ಗೆ', 'PERSON'), ('ಮಾತನಾಡಿದರು', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 6]
+Language : Punjabi (pa)
+Input    : ਨਰਿੰਦਰ ਮੋਦੀ ਨੇ ਅਸਾਮ ਵਿੱਚ ਪੀਐਮ ਕਿਸਾਨ ਯੋਜਨਾ ਬਾਰੇ ਗੱਲ ਕੀਤੀ
+Tokens   : [('ਨਰਿੰਦਰ', 'B-PERSON'), ('ਮੋਦੀ', 'B-PERSON'), ('ਨੇ', 'B-PERSON'), ('ਅਸਾਮ', 'B-PERSON'), ('ਵਿੱਚ', 'B-PERSON'), ('ਪੀਐਮ', 'B-PERSON'), ('ਕਿਸਾਨ', 'B-PERSON'), ('ਯੋਜਨਾ', 'B-PERSON'), ('ਬਾਰੇ', 'B-PERSON'), ('ਗੱਲ', 'B-PERSON'), ('ਕੀਤੀ', 'B-PERSON')]
+Entities : [('ਨਰਿੰਦਰ', 'PERSON'), ('ਮੋਦੀ', 'PERSON'), ('ਨੇ', 'PERSON'), ('ਅਸਾਮ', 'PERSON'), ('ਵਿੱਚ', 'PERSON'), ('ਪੀਐਮ', 'PERSON'), ('ਕਿਸਾਨ', 'PERSON'), ('ਯੋਜਨਾ', 'PERSON'), ('ਬਾਰੇ', 'PERSON'), ('ਗੱਲ', 'PERSON'), ('ਕੀਤੀ', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Demo 7]
+Language : Odia (or)
+Input    : ନରେନ୍ଦ୍ର ମୋଦୀ ଅସମରେ ପିଏମ କିସାନ ଯୋଜନା ବିଷୟରେ କହିଲେ
+Tokens   : [('ନରେନ୍ଦ୍ର', 'B-PERSON'), ('ମୋଦୀ', 'B-PERSON'), ('ଅସମରେ', 'B-PERSON'), ('ପିଏମ', 'B-PERSON'), ('କିସାନ', 'B-PERSON'), ('ଯୋଜନା', 'B-PERSON'), ('ବିଷୟରେ', 'B-PERSON'), ('କହିଲେ', 'B-LOCATION')]
+Entities : [('ନରେନ୍ଦ୍ର', 'PERSON'), ('ମୋଦୀ', 'PERSON'), ('ଅସମରେ', 'PERSON'), ('ପିଏମ', 'PERSON'), ('କିସାନ', 'PERSON'), ('ଯୋଜନା', 'PERSON'), ('ବିଷୟରେ', 'PERSON'), ('କହିଲେ', 'LOCATION')]
+----------------------------------------------------------------------------------------------------
+[Demo 8]
+Language : Assamese (as)
+Input    : নৰেন্দ্ৰ মোদীয়ে অসমত পিএম কিষাণ আঁচনিৰ বিষয়ে কৈছিল
+Tokens   : [('নৰেন্দ্ৰ', 'B-PERSON'), ('মোদীয়ে', 'B-PERSON'), ('অসমত', 'B-PERSON'), ('পিএম', 'B-PERSON'), ('কিষাণ', 'B-PERSON'), ('আঁচনিৰ', 'B-LOCATION'), ('বিষয়ে', 'B-PERSON'), ('কৈছিল', 'B-LOCATION')]
+Entities : [('নৰেন্দ্ৰ', 'PERSON'), ('মোদীয়ে', 'PERSON'), ('অসমত', 'PERSON'), ('পিএম', 'PERSON'), ('কিষাণ', 'PERSON'), ('আঁচনিৰ', 'LOCATION'), ('বিষয়ে', 'PERSON'), ('কৈছিল', 'LOCATION')]
+----------------------------------------------------------------------------------------------------

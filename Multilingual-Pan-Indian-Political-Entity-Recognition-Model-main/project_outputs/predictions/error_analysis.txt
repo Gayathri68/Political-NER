@@ -1,0 +1,59 @@
+====================================================================================================
+ERROR ANALYSIS (BEST MODEL = XLM-R)
+====================================================================================================
+[Error 1]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Odia (or)
+Sentence : ରାହୁଲ ଗାନ୍ଧୀ, ତୃଣମୂଳ କଂଗ୍ରେସ ଓ କିଛି କମ୍ୟୁନିଷ୍ଟ ନେତା ଏହି ଗ୍ୟାଙ୍ଗ୍‌ର ଅଂଶ ବୋଲି ସେ କହିଛନ୍ତି।
+True     : [('ରାହୁଲ ଗାନ୍ଧୀ, ତୃଣମୂଳ', 'PERSON')]
+Pred     : [('ରାହୁଲ', 'PERSON'), ('ଗାନ୍ଧୀ,', 'PERSON'), ('ତୃଣମୂଳ', 'GOVERNMENT_SCHEME'), ('କଂଗ୍ରେସ', 'PERSON'), ('ଓ', 'PERSON'), ('କିଛି', 'PERSON'), ('କମ୍ୟୁନିଷ୍ଟ', 'PERSON'), ('ନେତା', 'PERSON'), ('ଏହି', 'PERSON'), ('ଗ୍ୟାଙ୍ଗ୍\u200cର', 'PERSON'), ('ଅଂଶ', 'PERSON'), ('ବୋଲି', 'PERSON'), ('ସେ', 'PERSON'), ('କହିଛନ୍ତି।', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Error 2]
+Type     : FALSE POSITIVE / SPURIOUS ENTITY
+Language : Kannada (kn)
+Sentence : ಅವರು ೧೬ ವರ್ಷದವರಾಗಿದ್ದಾಗ, ಮಣಿಪಾಲದಲ್ಲಿ ಸೂಪರ್‌ಕ್ರಾಸ್ ಈವೆಂಟ್ ನಡೆಯಿತು.
+True     : []
+Pred     : [('ಅವರು', 'PERSON'), ('೧೬', 'PERSON'), ('ವರ್ಷದವರಾಗಿದ್ದಾಗ,', 'PERSON'), ('ಮಣಿಪಾಲದಲ್ಲಿ', 'PERSON'), ('ಸೂಪರ್\u200cಕ್ರಾಸ್', 'PERSON'), ('ಈವೆಂಟ್', 'PERSON'), ('ನಡೆಯಿತು.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Error 3]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Punjabi (pa)
+Sentence : ਗੈਂਗਸਟਰ ਪ੍ਰਭ ਦਾਸੂਵਾਲ ਨੇ ਲਈ ਜ਼ਿੰਮੇਵਾਰੀ.
+True     : [('ਜ਼ਿੰਮੇਵਾਰੀ.', 'PERSON')]
+Pred     : [('ਗੈਂਗਸਟਰ', 'PERSON'), ('ਪ੍ਰਭ', 'PERSON'), ('ਦਾਸੂਵਾਲ', 'PERSON'), ('ਨੇ', 'PERSON'), ('ਲਈ', 'PERSON'), ('ਜ਼ਿੰਮੇਵਾਰੀ.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Error 4]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : English (en)
+Sentence : Soren with the prestigious White Badge which is conferred upon select global leaders worldwide and grants uniform access to the WEF Congress Centre and all WEF exclusive events, making it one of the highest distinctions accorded by the WEF to heads of States and governments.”.
+True     : [('exclusive', 'POLITICAL_PARTY'), ('events, making it', 'POLITICAL_PARTY')]
+Pred     : [('Soren', 'PERSON'), ('with', 'GOVERNMENT_SCHEME'), ('the', 'PERSON'), ('prestigious', 'LOCATION'), ('White', 'PERSON'), ('Badge', 'GOVERNMENT_SCHEME'), ('which', 'PERSON'), ('is', 'PERSON'), ('conferred', 'GOVERNMENT_SCHEME'), ('upon', 'PERSON'), ('select', 'PERSON'), ('global', 'PERSON'), ('leaders', 'PERSON'), ('worldwide', 'PERSON'), ('and', 'LOCATION'), ('grants', 'PERSON'), ('uniform', 'PERSON'), ('access', 'PERSON'), ('to', 'PERSON'), ('the WEF', 'GOVERNMENT_SCHEME'), ('Congress', 'PERSON'), ('Centre and', 'GOVERNMENT_SCHEME'), ('all', 'PERSON'), ('WEF', 'LOCATION'), ('exclusive', 'PERSON'), ('events,', 'PERSON'), ('making it one', 'GOVERNMENT_SCHEME'), ('of', 'PERSON'), ('the', 'PERSON'), ('highest', 'PERSON'), ('distinctions', 'LOCATION'), ('accorded', 'PERSON'), ('by', 'GOVERNMENT_SCHEME'), ('the', 'PERSON'), ('WEF', 'PERSON'), ('to', 'GOVERNMENT_SCHEME'), ('heads', 'PERSON'), ('of', 'PERSON'), ('States', 'PERSON'), ('and', 'PERSON'), ('governments.”.', 'GOVERNMENT_SCHEME')]
+----------------------------------------------------------------------------------------------------
+[Error 5]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Malayalam (ml)
+Sentence : കണ്ണൂർ∙ സർക്കാരിന്റെ വികസന നേട്ടങ്ങൾ പ്രചരിപ്പിക്കുന്നതിനും വികസന നിർദേശങ്ങളും ആശയങ്ങളും ജനങ്ങളിൽനിന്ന് സമാഹരിക്കുന്നതിനുമായി വരും ദിവസങ്ങളിൽ വൊളന്റിയർമാർ വീടുകളിലെത്തും.
+True     : [('കണ്ണൂർ∙', 'LOCATION'), ('സർക്കാരിന്റെ', 'LOCATION'), ('വികസന', 'LOCATION')]
+Pred     : [('കണ്ണൂർ∙', 'PERSON'), ('സർക്കാരിന്റെ', 'PERSON'), ('വികസന', 'PERSON'), ('നേട്ടങ്ങൾ', 'PERSON'), ('പ്രചരിപ്പിക്കുന്നതിനും', 'PERSON'), ('വികസന', 'PERSON'), ('നിർദേശങ്ങളും', 'PERSON'), ('ആശയങ്ങളും', 'PERSON'), ('ജനങ്ങളിൽനിന്ന്', 'PERSON'), ('സമാഹരിക്കുന്നതിനുമായി', 'PERSON'), ('വരും', 'PERSON'), ('ദിവസങ്ങളിൽ', 'PERSON'), ('വൊളന്റിയർമാർ', 'PERSON'), ('വീടുകളിലെത്തും.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Error 6]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Punjabi (pa)
+Sentence : ਵੱਖ ਵੱਖ ਗੰਭੀਰ ਅਪਰਾਧਾਂ ਵਿੱਚ ਸਜ਼ਾ ਭੁਗਤ ਰਹੇ ਡੇਰਾ ਸਿਰਸਾ ਮੁਖੀ ਗੁਰਮੀਤ ਰਾਮ ਰਹੀਮ ਨੂੰ ਇੱਕ ਵਾਰ ਫਿਰ 40 ਦਿਨ ਦੀ ਪੈਰੋਲ ਦਿੱਤੇ ਜਾਣ ’ਤੇ ਸ਼੍ਰੋਮਣੀ ਗੁਰਦੁਆਰਾ ਪ੍ਰਬੰਧਕ ਕਮੇਟੀ ਦੇ ਪ੍ਰਧਾਨ ਐਡਵੋਕੇਟ ਹਰਜਿੰਦਰ ਸਿੰਘ ਧਾਮੀ ਨੇ ਸਖਤ ਇਤਰਾਜ਼ ਪ੍ਰਗਟ ਕੀਤਾ....
+True     : [('ਫਿਰ', 'PERSON'), ('40 ਦਿਨ ਦੀ ਪੈਰੋਲ', 'PERSON')]
+Pred     : [('ਵੱਖ', 'PERSON'), ('ਵੱਖ', 'PERSON'), ('ਗੰਭੀਰ', 'PERSON'), ('ਅਪਰਾਧਾਂ', 'PERSON'), ('ਵਿੱਚ', 'PERSON'), ('ਸਜ਼ਾ', 'PERSON'), ('ਭੁਗਤ', 'PERSON'), ('ਰਹੇ', 'PERSON'), ('ਡੇਰਾ', 'PERSON'), ('ਸਿਰਸਾ', 'PERSON'), ('ਮੁਖੀ', 'PERSON'), ('ਗੁਰਮੀਤ', 'PERSON'), ('ਰਾਮ', 'PERSON'), ('ਰਹੀਮ', 'PERSON'), ('ਨੂੰ', 'PERSON'), ('ਇੱਕ', 'PERSON'), ('ਵਾਰ', 'PERSON'), ('ਫਿਰ', 'PERSON'), ('40', 'PERSON'), ('ਦਿਨ', 'PERSON'), ('ਦੀ', 'PERSON'), ('ਪੈਰੋਲ', 'PERSON'), ('ਦਿੱਤੇ', 'PERSON'), ('ਜਾਣ', 'PERSON'), ('’ਤੇ', 'PERSON'), ('ਸ਼੍ਰੋਮਣੀ', 'PERSON'), ('ਗੁਰਦੁਆਰਾ', 'LOCATION'), ('ਪ੍ਰਬੰਧਕ', 'PERSON'), ('ਕਮੇਟੀ', 'PERSON'), ('ਦੇ', 'PERSON'), ('ਪ੍ਰਧਾਨ', 'PERSON'), ('ਐਡਵੋਕੇਟ', 'PERSON'), ('ਹਰਜਿੰਦਰ', 'PERSON'), ('ਸਿੰਘ', 'PERSON'), ('ਧਾਮੀ', 'PERSON'), ('ਨੇ', 'PERSON'), ('ਸਖਤ', 'PERSON'), ('ਇਤਰਾਜ਼', 'PERSON'), ('ਪ੍ਰਗਟ', 'PERSON'), ('ਕੀਤਾ....', 'PERSON')]
+----------------------------------------------------------------------------------------------------
+[Error 7]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Punjabi (pa)
+Sentence : ਉਨ੍ਹਾਂ ਇਹ ਗੱਲ ਸੀਨੀਅਰ ਵਕੀਲ ਰਾਕੇਸ਼ ਦਿਵੇਦੀ ਵੱਲੋਂ ਇਹ ਸੁਝਾਅ ਦੇਣ ਕਿ ਹਵਾ ਪ੍ਰਦੂਸ਼ਣ ਦੀ ਸਮੱਸਿਆ ਦਾ ਹੱਲ ਲੋਕਾਂ ਕੋਲ ਕਈ ਕਾਰਾਂ ਦੀ ਗਿਣਤੀ ਘੱਟ ਕਰ ਕੇ ਕੱਢਿਆ ਜਾ ਸਕਦਾ ਹੈ ਦੇ ਜਵਾਬ ਵਿੱਚ ਕਹੀ।
+True     : [('ਵੱਲੋਂ', 'PERSON'), ('ਇਹ', 'PERSON'), ('ਸੁਝਾਅ ਦੇਣ ਕਿ ਹਵਾ', 'PERSON')]
+Pred     : [('ਉਨ੍ਹਾਂ', 'PERSON'), ('ਇਹ', 'PERSON'), ('ਗੱਲ', 'PERSON'), ('ਸੀਨੀਅਰ', 'LOCATION'), ('ਵਕੀਲ', 'PERSON'), ('ਰਾਕੇਸ਼', 'PERSON'), ('ਦਿਵੇਦੀ', 'PERSON'), ('ਵੱਲੋਂ', 'PERSON'), ('ਇਹ', 'PERSON'), ('ਸੁਝਾਅ', 'PERSON'), ('ਦੇਣ', 'PERSON'), ('ਕਿ', 'PERSON'), ('ਹਵਾ', 'PERSON'), ('ਪ੍ਰਦੂਸ਼ਣ', 'PERSON'), ('ਦੀ', 'PERSON'), ('ਸਮੱਸਿਆ', 'PERSON'), ('ਦਾ', 'PERSON'), ('ਹੱਲ', 'PERSON'), ('ਲੋਕਾਂ', 'PERSON'), ('ਕੋਲ', 'PERSON'), ('ਕਈ', 'LOCATION'), ('ਕਾਰਾਂ', 'PERSON'), ('ਦੀ', 'PERSON'), ('ਗਿਣਤੀ', 'PERSON'), ('ਘੱਟ', 'GOVERNMENT_SCHEME'), ('ਕਰ', 'PERSON'), ('ਕੇ', 'PERSON'), ('ਕੱਢਿਆ', 'PERSON'), ('ਜਾ', 'PERSON'), ('ਸਕਦਾ', 'PERSON'), ('ਹੈ', 'PERSON'), ('ਦੇ', 'PERSON'), ('ਜਵਾਬ', 'PERSON'), ('ਵਿੱਚ', 'PERSON'), ('ਕਹੀ।', 'GOVERNMENT_SCHEME')]
+----------------------------------------------------------------------------------------------------
+[Error 8]
+Type     : PARTIAL MATCH / WRONG TYPE / BOUNDARY ERROR
+Language : Odia (or)
+Sentence : Target killings : ବାଂଲାଦେଶରେ ଟାର୍ଗେଟ୍‌ କିଲିଂ.
+True     : [('ଟାର୍ଗେଟ୍\u200c', 'LOCATION'), ('କିଲିଂ.', 'LOCATION')]
+Pred     : [('Target', 'PERSON'), ('killings', 'PERSON'), (':', 'PERSON'), ('ବାଂଲାଦେଶରେ', 'GOVERNMENT_SCHEME'), ('ଟାର୍ଗେଟ୍\u200c', 'PERSON'), ('କିଲିଂ.', 'PERSON')]
+----------------------------------------------------------------------------------------------------
